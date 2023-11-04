@@ -231,9 +231,8 @@ You will now see MyNewBranch highlighted in green. This tells us were on our new
 
 Now any commits we make will be saved to our, `MyNewBranch` branch, not to main.
 
-- Main Branch
 Test it out:
-> What is todays date? : Replace this text and Save
+> What is todays date? : 11/4/23
 
 And do our standard commit workflow.
 ```
