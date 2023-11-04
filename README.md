@@ -263,7 +263,10 @@ You'll see that our text reverts back to the old change! This is what git does, 
 You you can now create a new branch, switch between branches, and start working on a new one. For our last step we will take a look at **Merging** your new branch into your main.
 
 ### 2. Merging Branches
-After we are done working on our **feature** branch, `MyNewBranch`, we want to merge it back to main. We only use branches to create and test new features, but we tend to merge our code back into main afterwards, as this is our full, complete project. 
+After we are done working on our **feature** branch, `MyNewBranch`, we want to merge it back to main. Merging branches combines the `commits` from one branch with another. This adds brings your new feature into your new branch, and adds the `commits` to your current branch. In the end it should look like you were working on a single branch the whole time.
+
+
+
 
 In terminal do `git branch` and make sure you are current in your `main` branch. If not, do `git checkout main`.
 
@@ -275,6 +278,7 @@ We are now going to **MERGE OUR `MyNewBranch` INTO OUR `main`**
 
 
 
+We only use branches to create and test new features, but we tend to merge our code back into main afterwards, as this is our full, complete project. 
 
 Where you work might have a few different steps, but this is the standard practice.
 
