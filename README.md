@@ -151,10 +151,10 @@ Then save.
 Now do the following in terminal, one command at a time
 
 ```
-git status
-git add *
-git commit -m "Update READMD.md"
-git push
+	git status
+	git add *
+	git commit -m "Update README.md"
+	git push
 ```
 
 You should have seen what changes need to be staged, staged them, commited your README changes, and pushed them online.
@@ -166,10 +166,10 @@ What do you want to program when you graduate?
 
 Then
 ```
-git status
-git add *
-git commit -m "Update READMD.md"
-git push
+	git status
+	git add *
+	git commit -m "Update README.md"
+	git push
 ```
 
 Congrats. You can work with Git on Command Line.
@@ -231,16 +231,16 @@ You will now see MyNewBranch highlighted in green. This tells us were on our new
 
 Now any commits we make will be saved to our, `MyNewBranch` branch, not to main.
 
-- My New Branch
+- Main Branch
 Test it out:
-> What is todays date? : 11/4/23
+> What is todays date? : Replace this text and Save
 
 And do our standard commit workflow.
 ```
-git status
-git add *
-git commit -m "Update READMD.md"
-git push
+	git status
+	git add *
+	git commit -m "Update README.md"
+	git push
 ```
 
 To demonstrate what happend, we will have you `checkout main` again.
@@ -249,6 +249,38 @@ In terminal type
 
 `git checkout main`
 
+`MyNewBranch`  
+![MyNewBranch Update Text](Images/MNB_Example.png)   
+`Main Branch`  
+![Main Difference](Images/Main_Diff.png) 
+
+You'll see that our text reverts back to the old change! This is what git does, it will revert your code to the most recent commit on the branch. Since we changed the text in `MyNewBranch` but not `main` it doesn't show our change.
+
+> **Important** Always keep track of what branch you want and are working on. It's easy to get things mixed up.
+
+***Result***
+
+You you can now create a new branch, switch between branches, and start working on a new one. For our last step we will take a look at **Merging** your new branch into your main.
+
+### 2. Merging Branches
+After we are done working on our **feature** branch, `MyNewBranch`, we want to merge it back to main. We only use branches to create and test new features, but we tend to merge our code back into main afterwards, as this is our full, complete project. 
+
+In terminal do `git branch` and make sure you are current in your `main` branch. If not, do `git checkout main`.
+
+We are now going to **MERGE OUR `MyNewBranch` INTO OUR `main`**
+
+
+
+
+
+
+
+
+Where you work might have a few different steps, but this is the standard practice.
+
+> 1. Make a new branch from main
+> 2. Work on your feature on the new branch
+> 3. Merge your feature into main when complete
 
 
 
