@@ -128,8 +128,10 @@ In terminal type
 ![Pushing our Repo](Images/Pushing_Remote.png) 
 
 > **Imporant** - If you get a message in terminal that says  
-	`Set Upstream Origin...`  
-Then in Visual Studio click Git -> Push. This will connect your repository with your GitHub account the first time. Your `git push` will now will like normal on this project.
+	`git push --set-upstream origin main` you can either  
+> * type that command in. It will setup your local repo with your online repo.   
+> * Or in visual studio click Git -> Push. This will connect your repository with your GitHub account the first time.  
+Your `git push` will now will like normal on this project.
 
 That's it! Check out your GitHub account and look at your repository. You should see your project, and all your changes.
 
@@ -210,6 +212,43 @@ This is how we create a new branch. Next we see how to switch to our new branch.
 ### 1. Switch branches
 
 In terminal type `git branch` again to see our branches.
+
+![Git Branch - Display New Branch](Images/MyNewBranch.png) 
+
+We are now going to switch to our new branch, `MyNewBranch`.
+
+In terminal type
+
+`git checkout MyNewBranch`
+
+> `checkout` is the command that tells git you want to switch branches.
+
+Followed by `git branch`
+
+![Git Branch - Display New Branch](Images/Branch_New.png) 
+
+You will now see MyNewBranch highlighted in green. This tells us were on our new branch.
+
+Now any commits we make will be saved to our, `MyNewBranch` branch, not to main.
+
+Test it out:
+> What is todays date? : Replace the text and save
+
+And do our standard commit workflow.
+```
+git status
+git add *
+git commit -m "Update READMD.md"
+git push
+```
+
+To demonstrate what happend, we will have you `checkout main` again.
+
+In terminal type
+
+`git checkout main`
+
+
 
 ---
 ## Keywords
