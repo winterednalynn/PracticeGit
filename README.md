@@ -178,9 +178,38 @@ Git Branches allow you to crate / test new features on your project, without wor
 
 ### 1. Create a new branch
 
+In terminal type   
+`git branch`
 
+This displays your branches. By default you have 1, `main`. This is highlighted in green.
 
+![Git Branch - Main](Images/Branch.png) 
 
+Any commits we make are saved to the main branch. Lets create a new one.
+
+In terminal type
+
+`git branch MyNewBranch`
+
+followed by
+
+`git branch`
+
+![Git Branch - Display New Branch](Images/MyNewBranch.png) 
+
+You can see we have our new branch, named `MyNewBranch` listed. But we are still on our main branch ( main is still green ).
+
+#### What Visual Studio Sees
+
+You can also see what branch your currently on in Visual Studio, in the bottom right corner. The branch were on is always displayed ( here it's main ), clicking on it will display all of our branches.  
+
+![Visual Studio - Branches](Images/VS_Branches.png) 
+
+This is how we create a new branch. Next we see how to switch to our new branch.
+
+### 1. Switch branches
+
+In terminal type `git branch` again to see our branches.
 
 ---
 ## Keywords
