@@ -1,4 +1,12 @@
 # PracticeGit
+The is a Guided Practice for working with Git AFTER your repository has been initialized. This is to get comfortable commiting and pushing changes, and working with branches.
+
+We use this README for the demonstration, but this used for all files in your project.
+
+To get your project initialized in visual studio you can click the Git -> Create Repository menu up top, select your options, then hit create and push. Also click Git -> Push to setup working with your GitHub Repo.
+
+The workspace setup below is to help visualize what is happens when working with Git. But you don't need the Git Changes window open if you don't want with your project, it just demonstrates what `git status` shows.
+
 
 ## Prepwork Space
 
@@ -231,6 +239,7 @@ You will now see MyNewBranch highlighted in green. This tells us were on our new
 
 Now any commits we make will be saved to our, `MyNewBranch` branch, not to main.
 
+- Main Branch
 Test it out:
 > What is todays date? : 11/4/23
 
@@ -239,8 +248,9 @@ And do our standard commit workflow.
 	git status
 	git add *
 	git commit -m "Update README.md"
-	git push
 ```
+
+**Note** : You do not need to push your branches unless you want them online. You can just commit and leave them local. But it doesn't hurt to have a backup.
 
 To demonstrate what happend, we will have you `checkout main` again.
 
@@ -261,21 +271,32 @@ You'll see that our text reverts back to the old change! This is what git does, 
 
 You you can now create a new branch, switch between branches, and start working on a new one. For our last step we will take a look at **Merging** your new branch into your main.
 
+### Pro Tip : You can use `git checkout -b BranchName` to make a new branch and switch to it in one step instead of two.
+
 ### 2. Merging Branches
 After we are done working on our **feature** branch, `MyNewBranch`, we want to merge it back to main. Merging branches combines the `commits` from one branch with another. This adds brings your new feature into your new branch, and adds the `commits` to your current branch. In the end it should look like you were working on a single branch the whole time.
-
-
-
 
 In terminal do `git branch` and make sure you are current in your `main` branch. If not, do `git checkout main`.
 
 We are now going to **MERGE OUR `MyNewBranch` INTO OUR `main`**
 
+In terminal
 
+`git merge MyNewBranch`
 
+![Checkout and Merge](Images/CheckoutAndMerge.png) 
+![Merge Branches](Images/MergeBranches.png) 
 
+If everything worked properly, you should now see the change you made on `MyNewBranch` on `main`.
 
+![Merge Complete](Images/MergeComplete.png)
 
+You can `push` like normal, keep working on your main, or create new branches to work on. 
+
+> You don't need to delete your other branch, but if you want you can do
+> * `git branch -d MyNewBranch` - If you commited all your changes  
+> or
+> * `git branch -D MyNewBranch` - If you don't want to merge and just want to delete on the branch. **Be careful with this one**
 
 We only use branches to create and test new features, but we tend to merge our code back into main afterwards, as this is our full, complete project. 
 
@@ -286,6 +307,35 @@ Where you work might have a few different steps, but this is the standard practi
 > 3. Merge your feature into main when complete
 
 
+### Practice
+
+#### Your Git Branch workflow
+
+Lets get some practice. You are going to
+
+1. Create a new branch, `GreatFeature`.
+2. Switch to the `GreatFeature`
+3. Save and Commit to `GreatFeature`
+4. Switch back to `main`.
+5. Merge `GreatFeature` into `main`.
+
+---
+
+1. `git branch GreatFeature`
+2. `git checkout GreatFeature`
+3. Change, save, and commit the following text  
+
+What school are you attending?
+> What school are you going to? Change this, save and commit
+
+4. `git checkout main`
+5. `git merge GreatFeature`
+
+You should see your answer from GreatFeature on your main.
+
+And that's it! This is your workflow for working on a branch.
+
+This seems like a lot, but it becomes second nature with practice. You will run into problems, all programmers do. But you'll gain experince and be using command line like a pro in no time. Good luck!
 
 ---
 ## Keywords
@@ -297,6 +347,8 @@ Where you work might have a few different steps, but this is the standard practi
 Git status
 * `status` - view which files have changed
 	* `git status`
+
+---
 Commiting and Pushing your changes
 * `add *` - Stage your current changes
 	* `git add *`  
