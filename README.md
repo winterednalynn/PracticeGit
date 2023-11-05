@@ -7,6 +7,8 @@ To get your project initialized in visual studio you can click the Git -> Create
 
 The workspace setup below is to help visualize what is happens when working with Git. But you don't need the Git Changes window open if you don't want with your project, it just demonstrates what `git status` shows.
 
+## Fork This Repo : https://github.com/WCramRTC/PracticeGit
+![Fork This Repo](Images/ForkImage.png)
 
 ## Prepwork Space
 
