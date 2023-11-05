@@ -193,7 +193,7 @@ In terminal type
 
 This displays your branches. By default you have 1, `main`. This is highlighted in green.
 
-![Git Branch - Main](Images/Branch.png) 
+![Git Branch - Main](Images/branch.png) 
 
 Any commits we make are saved to the main branch. Lets create a new one.
 
