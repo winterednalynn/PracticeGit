@@ -155,7 +155,7 @@ And that's what it takes to use Termianl To Commit and Push your repo online.
 #### Your `save, add, commit, push` Workflow
 
 Type your favorite color below:
-> What's your favorite color: Replace this text
+> What's your favorite color: Mint
 Then save.
 
 Now do the following in terminal, one command at a time
@@ -172,7 +172,7 @@ You should have seen what changes need to be staged, staged them, commited your 
 One more time
 
 What do you want to program when you graduate?
-> What do you want to program? Replace this and save
+> What do you want to program? C# and Python. I do want to see the hype on GO. 
 
 Then
 ```
